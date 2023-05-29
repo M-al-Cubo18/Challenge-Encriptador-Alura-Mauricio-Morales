@@ -1,0 +1,256 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body
+{
+  /*
+  background-color: #19A7CE;
+  */
+  background-color: #B0DAFF;
+  opacity: 100%;
+}
+
+nav
+{
+  background: #0082e6;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  height: 70px;
+  width: 100%;
+}
+
+img
+{
+  max-width: 100%;
+  max-height: 70px;
+  float: left;
+  border-radius:  8px;
+}
+
+/*Acá está el título del Nav Bar*/
+nav ul
+{
+  text-align: center;
+  font-family: Arial;
+  line-height: 70px;
+}
+
+.cajon1
+{
+  float: left;
+  margin-left: 15px;
+  max-width: 70%;
+}
+
+.cajon2
+{
+  float: left;
+  margin-left: 25px;
+  max-width: 42%;
+}
+
+h4
+{
+  font-family: Arial;
+}
+
+textarea
+{
+  border-radius: 3px;
+  font-family: Arial;
+  font-size: 20px;
+  resize: none;
+}
+
+/*Estas son las propiedades que contiene el <textarea> donde el usuario ingresa el texto*/
+.txtAreaTextoIzquierda
+{
+  border: 1px solid white;
+  max-width: 100%;
+}
+
+/*Esto también es del <textarea> donde el usuario ingresa el texto, pero con la diferencia de que aquí estaría haciendo click para escribiri en el recuadro*/
+.txtAreaTextoIzquierda:focus
+{
+  outline: none;
+  border: 0;
+  background-color: white;
+  color: black;
+}
+
+/*En este caso, el <textarea> sería del texto que fue encriptado/desencriptado*/
+.txtAreaTextoDerecha
+{
+  border: none;
+  max-width: 100%;
+}
+
+/*Lo mismo de arriba, pero cuando el usuario hace click en el <textarea>*/
+.txtAreaTextoDerecha:focus
+{
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #F6F1F1;
+  color: black;
+}
+
+.btnGroup
+{
+  margin-top: 10px;
+  display: flex;
+  clear: both;
+}
+
+.Encriptar
+{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.Desencriptar
+{
+  margin-right: 20px;
+}
+
+
+/*Efecto para los botones de encriptar, desencriptar, copiar y borrar*/
+.btnEncriptar {
+  padding: 17px 40px;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgb(255, 56, 86);
+  letter-spacing: 1.5px;
+  font-size: 15px;
+  transition: all .3s ease;
+  box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
+  color: hsl(0, 0%, 0%);
+ }
+ 
+ .btnEncriptar:hover {
+  box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
+ }
+ 
+ .btnEncriptar:active {
+  background-color: rgb(255, 56, 86);
+  /*50, 168, 80*/
+  box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+  transform: translateY(5px);
+  transition: 200ms;
+ }
+
+ .btnDesencriptar {
+  padding: 17px 40px;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgb(34, 199, 228);
+  letter-spacing: 1.5px;
+  font-size: 15px;
+  transition: all .3s ease;
+  box-shadow: rgb(60, 93, 240) 0px 10px 0px 0px;
+  color: rgb(0, 0, 0);
+ }
+ 
+ .btnDesencriptar:hover {
+  box-shadow: rgb(60, 93, 240) 0px 7px 0px 0px;
+ }
+ 
+ .btnDesencriptar:active {
+  background-color: rgb(34, 199, 228);
+  box-shadow: rgb(60, 93, 240) 0px 0px 0px 0px;
+  transform: translateY(5px);
+  transition: 200ms;
+ }
+
+ .btnBorrar 
+{
+ padding: 17px 40px;
+ border-radius: 10px;
+ border: 0;
+ background-color: #FFD700;
+ letter-spacing: 1.5px;
+ font-size: 15px;
+ transition: all .3s ease;
+ box-shadow: #FFBF00 0px 10px 0px 0px;
+ color: hsl(0, 0%, 0%);
+
+}
+
+.btnBorrar:hover 
+{
+ box-shadow: #FFBF00 0px 7px 0px 0px;
+}
+
+.btnBorrar:active 
+{
+ background-color: #FFD700;
+ /*50, 168, 80*/
+ box-shadow: #FFBF00 0px 0px 0px 0px;
+ transform: translateY(5px);
+ transition: 200ms;
+}
+
+
+
+.btnCopiar 
+{
+  margin-left: 445px;
+  margin-right: 14px;
+ padding: 17px 40px;
+ border-radius: 10px;
+ border: 0;
+ background-color: #8BF5FA;
+ letter-spacing: 1.5px;
+ font-size: 15px;
+ transition: all .3s ease;
+ box-shadow: #3F979B 0px 10px 0px 0px;
+ color: hsl(0, 0%, 0%);
+
+}
+
+.btnCopiar:hover 
+{
+ box-shadow: #3F979B 0px 7px 0px 0px;
+}
+
+.btnCopiar:active 
+{
+ background-color: #8BF5FA;
+ /*50, 168, 80*/
+ box-shadow: #3F979B 0px 0px 0px 0px;
+ transform: translateY(5px);
+ transition: 200ms;
+}
+
+.btnBorrar2 
+{
+ padding: 17px 40px;
+ border-radius: 10px;
+ border: 0;
+ background-color: #FFD700;
+ letter-spacing: 1.5px;
+ font-size: 15px;
+ transition: all .3s ease;
+ box-shadow: #FFBF00 0px 10px 0px 0px;
+ color: hsl(0, 0%, 0%);
+
+}
+
+.btnBorrar2:hover 
+{
+ box-shadow: #FFBF00 0px 7px 0px 0px;
+}
+
+.btnBorrar2:active 
+{
+ background-color: #FFD700;
+ /*50, 168, 80*/
+ box-shadow: #FFBF00 0px 0px 0px 0px;
+ transform: translateY(5px);
+ transition: 200ms;
+}

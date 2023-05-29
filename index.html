@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Tarea</title>
+</head>
+<body>
+    <!--Barra superior de la página, donde está el logo de alura y el título de la aplicación-->
+    <nav>
+        <img src="alura_logo.png" alt="Logo de Alura">
+
+
+        <ul>
+            <h1>Encriptador y Desencriptador</h1>
+        </ul>
+    </nav>
+    <br>
+
+    <div class="cajon1">
+
+        <h4>Mensaje a Encriptar/Desencriptar</h4>
+        <textarea class="txtAreaTextoIzquierda" id="input_Texto" cols="100" rows="30" placeholder="Su texto va acá"></textarea>
+
+    </div>
+
+    <div class="cajon2">
+        <h4>Mensaje Encriptado: </h4>
+        <textarea class="txtAreaTextoDerecha" id="txtInputSalida" cols="79" rows="30" placeholder="Su texto desencriptado/encriptado acá" readonly></textarea>
+    </div>
+<br>
+    <div class="btnGroup">
+        <div class="btnGroup Encriptar">
+            <button class="btnEncriptar" type="button" id="btnEncriptar"><i class="bi bi-lock-fill"></i>Encriptar</button>
+        </div>
+
+        <div class="btnGroup Desencriptar">
+            <button type="button" class="btnDesencriptar" id="btnDesencriptar"><i class="bi bi-unlock-fill"></i>Desencriptar</button>
+        </div>
+
+        <div class="btnGroup Borrar1">
+            <button type="btn btn-danger" class="btnBorrar" type="button" id="btnBorrar"><i class="bi bi-trash"></i>Borrar Texto</button>
+        </div>
+
+        <div class="btnGroup Copiar2">
+            <button class="btnCopiar" type="button" id="btnCopiarAbajo"><i class="bi bi-paperclip"></i>Copiar</button>
+        </div>
+
+        <div class="btnGroup Borrar2">
+            <button class="btnBorrar2" type="button" id="btnBorrar2"><i class="bi bi-trash"></i>Borrar Texto</button>
+        </div>
+    </div>
+</body>
+
+<!--Script para el funcionamiento correcto de las funciones del html-->
+<script src="script.js"></script>
+</html>
